@@ -43,7 +43,7 @@ namespace Core4.Controllers
                         false);
                     if (result.Succeeded)
                     {
-                        var claims = new[]
+                        var claims =    new[]
                         {
                             new Claim(JwtRegisteredClaimNames.Sub, user.Email),
                             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
